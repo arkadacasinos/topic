@@ -43,81 +43,64 @@
     <style>
         * { font-family: 'Inter', sans-serif; }
         body { background: #0a0a12; }
-
         .hero-gradient {
             background: radial-gradient(ellipse at 50% 0%, rgba(249,138,7,0.15) 0%, transparent 60%),
                         radial-gradient(ellipse at 80% 20%, rgba(221,100,2,0.08) 0%, transparent 40%),
                         radial-gradient(ellipse at 20% 80%, rgba(183,67,3,0.06) 0%, transparent 40%),
                         #0a0a12;
         }
-
         .card-glow:hover {
             box-shadow: 0 0 30px rgba(249,138,7,0.15), 0 0 60px rgba(249,138,7,0.05);
         }
-
         .gold-border {
             border-image: linear-gradient(135deg, #ffc44a, #f98a07, #dd6402) 1;
         }
-
         .shimmer {
             background: linear-gradient(110deg, transparent 30%, rgba(255,196,74,0.08) 50%, transparent 70%);
             background-size: 200% 100%;
             animation: shimmer 3s infinite;
         }
-
         @keyframes shimmer {
             0% { background-position: 200% 0; }
             100% { background-position: -200% 0; }
         }
-
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
         }
-
         .float-anim { animation: float 4s ease-in-out infinite; }
         .float-anim-delay { animation: float 4s ease-in-out 1s infinite; }
-
         @keyframes pulse-gold {
             0%, 100% { opacity: 0.4; }
             50% { opacity: 1; }
         }
-
         .pulse-gold { animation: pulse-gold 2s ease-in-out infinite; }
-
         .text-gradient {
             background: linear-gradient(135deg, #ffc44a, #f98a07, #dd6402);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
         .bg-grid {
             background-image:
                 linear-gradient(rgba(255,196,74,0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255,196,74,0.03) 1px, transparent 1px);
             background-size: 60px 60px;
         }
-
         .scroll-smooth { scroll-behavior: smooth; }
-
         .rank-badge {
             background: linear-gradient(135deg, #ffc44a, #f98a07);
             box-shadow: 0 4px 15px rgba(249,138,7,0.4);
         }
-
         .stars { color: #ffc44a; }
-
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0f0f1a; }
         ::-webkit-scrollbar-thumb { background: #3a3a58; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #f98a07; }
-
         .section-divider {
             height: 1px;
             background: linear-gradient(90deg, transparent, rgba(249,138,7,0.3), transparent);
         }
-
         .toc-link:hover { color: #ffc44a; padding-left: 8px; }
 
         .accordion-content {
@@ -136,12 +119,10 @@
         .accordion-icon.rotated {
             transform: rotate(180deg);
         }
-
         .nav-blur {
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
         }
-
         .chip-icon {
             display: inline-flex;
             align-items: center;
@@ -154,7 +135,6 @@
             font-weight: 700;
             color: #0a0a12;
         }
-
         .feature-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -165,8 +145,6 @@
     </style>
 </head>
 <body class="text-gray-200 scroll-smooth">
-
-    <!-- Navigation -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-casino-950/80 border-b border-casino-600/30 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
@@ -191,7 +169,6 @@
                 </div>
             </div>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-casino-900/95 border-t border-casino-600/30">
             <div class="px-4 py-4 space-y-3">
                 <a href="#ratings" class="block text-sm text-gray-400 hover:text-gold-400 transition-colors py-2">Рейтинг</a>
@@ -203,25 +180,19 @@
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
     <section class="hero-gradient relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24">
         <div class="bg-grid absolute inset-0 pointer-events-none"></div>
-        <!-- Decorative Elements -->
         <div class="absolute top-20 left-10 w-72 h-72 bg-gold-500/5 rounded-full blur-3xl float-anim"></div>
         <div class="absolute bottom-10 right-10 w-96 h-96 bg-gold-600/5 rounded-full blur-3xl float-anim-delay"></div>
-
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-4xl mx-auto">
                 <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-2 mb-6">
                     <span class="w-2 h-2 bg-gold-400 rounded-full pulse-gold"></span>
                     <span class="text-gold-300 text-sm font-medium">Обновлено: Июнь 2026</span>
-===
                 </div>
                 <h1 class="text-4xl sm:text-5xl md:text-7xl font-black text-white leading-tight mb-6">
                     Рейтинг казино<br>
                     <span class="text-gradient">онлайн 2026</span>
-===
                 </h1>
                 <p class="text-lg sm:text-xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
                     Топ онлайн казино России с лицензией. Честные рейтинги, реальные отзывы и актуальные бонусы от экспертов индустрии.
@@ -236,8 +207,6 @@
                         Читать обзоры
                     </a>
                 </div>
-
-                <!-- Trust badges -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
                     <div class="bg-casino-800/50 border border-casino-600/30 rounded-xl p-4 text-center">
                         <div class="text-2xl font-bold text-gold-400">50+</div>
@@ -259,10 +228,7 @@
             </div>
         </div>
     </section>
-
     <div class="section-divider"></div>
-
-    <!-- Casino Ratings Section -->
     <section id="ratings" class="py-16 md:py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -275,8 +241,6 @@
                 </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">Проверенные лицензионные казино с быстрыми выплатами и честной игрой. Рейтинг составлен на основе экспертных оценок и отзывов реальных игроков.</p>
             </div>
-
-            <!-- Filter Tabs -->
             <div class="flex flex-wrap gap-2 justify-center mb-10">
                 <button class="filter-btn active bg-gold-500/20 border border-gold-500/30 text-gold-300 px-4 py-2 rounded-lg text-sm font-medium transition-all" data-filter="all">Все казино</button>
                 <button class="filter-btn bg-casino-700/50 border border-casino-600/30 text-gray-400 px-4 py-2 rounded-lg text-sm font-medium transition-all hover:text-gold-300" data-filter="new">Новые</button>
@@ -284,10 +248,7 @@
                 <button class="filter-btn bg-casino-700/50 border border-casino-600/30 text-gray-400 px-4 py-2 rounded-lg text-sm font-medium transition-all hover:text-gold-300" data-filter="fast">Быстрый вывод</button>
                 <button class="filter-btn bg-casino-700/50 border border-casino-600/30 text-gray-400 px-4 py-2 rounded-lg text-sm font-medium transition-all hover:text-gold-300" data-filter="mobile">Мобильные</button>
             </div>
-
-            <!-- Casino Cards -->
             <div class="space-y-4" id="casinoList">
-                <!-- Card 1 - Beef Casino -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden shimmer" data-category="all fast bonus">
                     <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gold-400 via-gold-500 to-gold-400"></div>
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
@@ -322,8 +283,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 2 - Fugu Casino -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden" data-category="all new bonus">
                     <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400"></div>
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
@@ -357,8 +316,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 3 - Martin Casino -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden" data-category="all fast mobile">
                     <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600"></div>
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
@@ -391,8 +348,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 4 - Winity Casino -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden" data-category="all new mobile">
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
                         <div class="flex items-center gap-4 flex-shrink-0">
@@ -425,8 +380,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 5 - Arkada Casino -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden" data-category="all fast bonus">
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
                         <div class="flex items-center gap-4 flex-shrink-0">
@@ -458,8 +411,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 6 - Kent Casino -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden" data-category="all mobile">
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
                         <div class="flex items-center gap-4 flex-shrink-0">
@@ -491,8 +442,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 7 - Eva Casino -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden" data-category="all new fast">
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
                         <div class="flex items-center gap-4 flex-shrink-0">
@@ -525,8 +474,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 8 - Banda Casino (NEW) -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden" data-category="all bonus mobile">
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
                         <div class="flex items-center gap-4 flex-shrink-0">
@@ -558,8 +505,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 9 - Kush Casino (NEW) -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden" data-category="all fast new">
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
                         <div class="flex items-center gap-4 flex-shrink-0">
@@ -592,8 +537,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Card 10 - Vavada Casino (NEW) -->
                 <div class="casino-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-4 sm:p-6 card-glow transition-all duration-300 relative overflow-hidden" data-category="all mobile bonus">
                     <div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-6">
                         <div class="flex items-center gap-4 flex-shrink-0">
@@ -629,25 +572,19 @@
             </div>
         </div>
     </section>
-
-    <div class="section-divider"></div>
-
-    <!-- New Casinos 2025 -->
+ <div class="section-divider"></div>
     <section id="new-casinos" class="py-16 md:py-24 bg-grid relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-12">
                 <div class="inline-flex items-center gap-2 text-gold-400 text-sm font-semibold mb-3">
                     <i data-lucide="sparkles" class="w-4 h-4"></i>
                     НОВИНКИ 2026
-===
                 </div>
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4">
                     Новые казино <span class="text-gradient">2026</span>
-===
                 </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">Перспективные платформы с передовыми технологиями, щедрыми бонусами и инновационными механиками.</p>
             </div>
-
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="feature-card bg-casino-800/60 border border-casino-600/30 rounded-2xl overflow-hidden">
                     <img src="http://static.photos/technology/640x360/10" alt="Новые технологии" class="w-full h-48 object-cover">
@@ -657,10 +594,8 @@
                             <h3 class="text-white font-bold">Пионеры инноваций</h3>
                         </div>
                         <p class="text-gray-400 text-sm leading-relaxed">Новые казино 2026 используют самые современные технологии: AI-персонализацию, blockchain-транзакции и VR/AR решения для иммерсивного игрового окружения.</p>
-===
                     </div>
                 </div>
-
                 <div class="feature-card bg-casino-800/60 border border-casino-600/30 rounded-2xl overflow-hidden">
                     <img src="http://static.photos/abstract/640x360/11" alt="Социальные функции" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -671,7 +606,6 @@
                         <p class="text-gray-400 text-sm leading-relaxed">Возможность играть с друзьями, участвовать в командных турнирах и делиться достижениями. Криптовалютные депозиты привлекают технически подкованную аудиторию.</p>
                     </div>
                 </div>
-
                 <div class="feature-card bg-casino-800/60 border border-casino-600/30 rounded-2xl overflow-hidden">
                     <img src="http://static.photos/finance/640x360/12" alt="Быстрая верификация" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -685,10 +619,7 @@
             </div>
         </div>
     </section>
-
     <div class="section-divider"></div>
-
-    <!-- License & Safety Section -->
     <section id="license" class="py-16 md:py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -701,7 +632,6 @@
                 </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">Почему лицензия имеет значение и как она защищает ваши права как игрока.</p>
             </div>
-
             <div class="grid md:grid-cols-2 gap-8 mb-12">
                 <div class="bg-casino-800/60 border border-casino-600/30 rounded-2xl p-6 sm:p-8">
                     <div class="flex items-center gap-3 mb-6">
@@ -730,7 +660,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="bg-casino-800/60 border border-casino-600/30 rounded-2xl p-6 sm:p-8">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center">
@@ -759,8 +688,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- Regulators -->
             <div class="bg-casino-800/40 border border-casino-600/20 rounded-2xl p-6 sm:p-8">
                 <h3 class="text-white font-bold text-lg mb-6 text-center">Авторитетные регуляторы</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -784,10 +711,7 @@
             </div>
         </div>
     </section>
-
     <div class="section-divider"></div>
-
-    <!-- Bonuses Section -->
     <section id="bonuses" class="py-16 md:py-24 bg-grid relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-12">
@@ -800,7 +724,6 @@
                 </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">Щедрые приветственные бонусы, программы лояльности и кэшбэк в лучших казино России.</p>
             </div>
-
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="feature-card bg-gradient-to-br from-gold-500/10 to-transparent border border-gold-500/20 rounded-2xl p-6 sm:p-8 text-center">
                     <div class="w-16 h-16 mx-auto rounded-2xl bg-gold-500/20 flex items-center justify-center mb-4">
@@ -810,7 +733,6 @@
                     <div class="text-gold-400 font-black text-3xl mb-2">до 200%</div>
                     <p class="text-gray-400 text-sm leading-relaxed">На первый депозит + бесплатные вращения. Вейджер от x25 до x40 в зависимости от казино.</p>
                 </div>
-
                 <div class="feature-card bg-gradient-to-br from-purple-500/10 to-transparent border border-purple-500/20 rounded-2xl p-6 sm:p-8 text-center">
                     <div class="w-16 h-16 mx-auto rounded-2xl bg-purple-500/20 flex items-center justify-center mb-4">
                         <i data-lucide="rotate-ccw" class="w-8 h-8 text-purple-400"></i>
@@ -819,7 +741,6 @@
                     <div class="text-purple-400 font-black text-3xl mb-2">до 25%</div>
                     <p class="text-gray-400 text-sm leading-relaxed">Возврат части проигранных средств каждую неделю. VIP-игроки получают повышенный кэшбэк.</p>
                 </div>
-
                 <div class="feature-card bg-gradient-to-br from-blue-500/10 to-transparent border border-blue-500/20 rounded-2xl p-6 sm:p-8 text-center">
                     <div class="w-16 h-16 mx-auto rounded-2xl bg-blue-500/20 flex items-center justify-center mb-4">
                         <i data-lucide="crown" class="w-8 h-8 text-blue-400"></i>
@@ -829,8 +750,6 @@
                     <p class="text-gray-400 text-sm leading-relaxed">Персональный менеджер, эксклюзивные турниры, специальные бонусы и привилегии для VIP-игроков.</p>
                 </div>
             </div>
-
-            <!-- Bonus terms -->
             <div class="mt-8 bg-casino-800/40 border border-casino-600/20 rounded-2xl p-6">
                 <div class="flex items-start gap-3">
                     <i data-lucide="info" class="w-5 h-5 text-gold-400 flex-shrink-0 mt-0.5"></i>
@@ -842,10 +761,7 @@
             </div>
         </div>
     </section>
-
     <div class="section-divider"></div>
-
-    <!-- Payment Methods -->
     <section class="py-16 md:py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -858,7 +774,6 @@
                 </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">Разнообразные методы депозитов и вывода средств для удобства российских игроков.</p>
             </div>
-
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
                 <div class="bg-casino-800/60 border border-casino-600/30 rounded-xl p-4 text-center hover:border-gold-500/30 transition-colors">
                     <div class="text-2xl mb-2">💳</div>
@@ -887,10 +802,7 @@
             </div>
         </div>
     </section>
-
     <div class="section-divider"></div>
-
-    <!-- Articles Section -->
     <section id="articles" class="py-16 md:py-24 bg-grid relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-12">
@@ -903,8 +815,6 @@
                 </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">Глубокий анализ всех аспектов индустрии онлайн-казино: технологии, безопасность, игры и тенденции.</p>
             </div>
-
-            <!-- Article Accordion -->
             <div class="space-y-3 max-w-4xl mx-auto">
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="acc1">
@@ -918,11 +828,9 @@
                         <h4 class="text-gold-400 font-semibold mb-3">Революция в мире онлайн-гемблинга</h4>
                         <p class="mb-3">Индустрия онлайн-казино в 2026 году переживает беспрецедентную трансформацию. Новые технологии, улучшенная безопасность и инновационные подходы к игровому процессу определяют будущее гемблинга. Ведущие операторы внедряют искусственный интеллект для персонализации игрового опыта, blockchain-технологии для обеспечения прозрачности транзакций, и VR/AR решения для создания иммерсивного игрового окружения.</p>
                         <p class="mb-3">Современные казино 2026 предлагают невероятное разнообразие игр: от классических слотов с прогрессивными джекпотами до live-дилер игр с профессиональными крупье в студиях высокого разрешения. Мобильная оптимизация достигла новых высот, позволяя наслаждаться полноценным игровым процессом на любых устройствах.</p>
-===
                         <p>Регулирование индустрии становится более строгим, что положительно влияет на защиту игроков. Лицензированные казино 2025 года обеспечивают честную игру, быстрые выплаты и круглосуточную поддержку пользователей.</p>
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="acc2">
                         <div class="flex items-center gap-3">
@@ -938,7 +846,6 @@
                         <p>Важно понимать, что игра на деньги должна рассматриваться как форма развлечения, а не способ заработка. Успешные игроки всегда устанавливают четкие лимиты и никогда не играют на заемные средства или деньги, предназначенные для важных расходов.</p>
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="acc3">
                         <div class="flex items-center gap-3">
@@ -954,7 +861,6 @@
                         <p>Профессиональная служба поддержки в онлайн казино на реальные деньги работает 24/7 и готова помочь с любыми вопросами: от технических проблем до вопросов по бонусам и выплатам.</p>
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="acc4">
                         <div class="flex items-center gap-3">
@@ -970,7 +876,6 @@
                         <p>Отзывы реальных игроков и независимые обзоры экспертов дополняют объективную картину при составлении рейтинга. Важно учитывать как положительные, так и отрицательные отзывы, анализируя их объективность и актуальность.</p>
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="acc5">
                         <div class="flex items-center gap-3">
@@ -986,7 +891,6 @@
                         <p>Игровой контент адаптируется под местные предпочтения: популярные слоты с простыми правилами, игры на русском языке, тематики, близкие российским игрокам. Турниры и акции привязываются к российским праздникам и событиям.</p>
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="acc6">
                         <div class="flex items-center gap-3">
@@ -1005,10 +909,7 @@
             </div>
         </div>
     </section>
-
     <div class="section-divider"></div>
-
-    <!-- Criteria Section -->
     <section class="py-16 md:py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -1021,7 +922,6 @@
                 </h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">Как мы составляем рейтинг интернет казино онлайн. Комплексный подход к анализу платформ.</p>
             </div>
-
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="feature-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-6">
                     <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4">
@@ -1030,7 +930,6 @@
                     <h3 class="text-white font-bold mb-2">Лицензирование</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Наличие действующей лицензии от авторитетного регулятора — ключевой критерий при оценке.</p>
                 </div>
-
                 <div class="feature-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-6">
                     <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4">
                         <i data-lucide="zap" class="w-6 h-6 text-gold-400"></i>
@@ -1038,7 +937,6 @@
                     <h3 class="text-white font-bold mb-2">Скорость выплат</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Быстрые выплаты — стандарт индустрии. Многие платформы обрабатывают заявки за несколько минут.</p>
                 </div>
-
                 <div class="feature-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-6">
                     <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4">
                         <i data-lucide="gamepad-2" class="w-6 h-6 text-gold-400"></i>
@@ -1046,7 +944,6 @@
                     <h3 class="text-white font-bold mb-2">Игровой контент</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Разнообразие, качество и уникальность игр от ведущих провайдеров индустрии.</p>
                 </div>
-
                 <div class="feature-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-6">
                     <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4">
                         <i data-lucide="gift" class="w-6 h-6 text-gold-400"></i>
@@ -1054,7 +951,6 @@
                     <h3 class="text-white font-bold mb-2">Бонусные программы</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Справедливые условия бонусов, разумные вейджеры и прозрачные правила начисления.</p>
                 </div>
-
                 <div class="feature-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-6">
                     <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4">
                         <i data-lucide="headphones" class="w-6 h-6 text-gold-400"></i>
@@ -1062,7 +958,6 @@
                     <h3 class="text-white font-bold mb-2">Клиентская поддержка</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Круглосуточная многоязычная поддержка через чат, email и телефон с быстрым ответом.</p>
                 </div>
-
                 <div class="feature-card bg-casino-800/60 border border-casino-600/30 rounded-2xl p-6">
                     <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center mb-4">
                         <i data-lucide="smartphone" class="w-6 h-6 text-gold-400"></i>
@@ -1073,10 +968,7 @@
             </div>
         </div>
     </section>
-
     <div class="section-divider"></div>
-
-    <!-- FAQ Section -->
     <section id="faq" class="py-16 md:py-24 bg-grid relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-12">
@@ -1088,7 +980,6 @@
                     Частые <span class="text-gradient">вопросы</span>
                 </h2>
             </div>
-
             <div class="max-w-3xl mx-auto space-y-3">
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="faq1">
@@ -1099,7 +990,6 @@
                         Обращайте внимание на наличие лицензии, скорость выплат, качество игрового контента, условия бонусов и отзывы реальных игроков. Наш рейтинг учитывает все эти факторы и помогает сделать обоснованный выбор.
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="faq2">
                         <span class="text-white font-semibold text-sm sm:text-base">Что такое вейджер и как его отыграть?</span>
@@ -1109,7 +999,6 @@
                         Вейджер (wager) — это множитель, показывающий, сколько раз нужно поставить бонусную сумму. Например, при бонусе 10 000 ₽ и вейджере x30 нужно сделать ставок на 300 000 ₽. Выбирайте казино с вейджером от x25 до x40 для лучших условий.
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="faq3">
                         <span class="text-white font-semibold text-sm sm:text-base">Безопасно ли играть в онлайн казино на реальные деньги?</span>
@@ -1119,7 +1008,6 @@
                         Да, если вы выбираете лицензированные казино из нашего рейтинга. Они используют SSL-шифрование, сертифицированные ГСЧ и предлагают инструменты ответственной игры. Всегда проверяйте наличие лицензии перед регистрацией.
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="faq4">
                         <span class="text-white font-semibold text-sm sm:text-base">Как быстро выводят деньги лучшие казино?</span>
@@ -1129,7 +1017,6 @@
                         Топ казино из нашего рейтинга обрабатывают заявки на вывод от нескольких минут до 24 часов. Криптовалютные выплаты обычно самые быстрые — от 5 до 30 минут. На банковские карты срок составляет 1-3 рабочих дня.
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="faq5">
                         <span class="text-white font-semibold text-sm sm:text-base">Что такое RTP и почему это важно?</span>
@@ -1139,7 +1026,6 @@
                         RTP (Return to Player) — процент возврата игроку на длительной дистанции. Например, RTP 96% означает, что в среднем на каждые 100 ₽ ставок игрок получает обратно 96 ₽. В лицензированных казино RTP публикуется открыто и обычно составляет от 95% до 98%.
                     </div>
                 </div>
-
                 <div class="accordion-item bg-casino-800/60 border border-casino-600/30 rounded-xl overflow-hidden">
                     <button class="accordion-btn w-full flex items-center justify-between p-5 text-left hover:bg-casino-700/30 transition-colors" data-target="faq6">
                         <span class="text-white font-semibold text-sm sm:text-base">Какие платежные системы доступны в казино России?</span>
@@ -1152,10 +1038,7 @@
             </div>
         </div>
     </section>
-
     <div class="section-divider"></div>
-
-    <!-- Responsible Gaming -->
     <section class="py-16 md:py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-br from-red-500/10 to-transparent border border-red-500/20 rounded-2xl p-6 sm:p-10">
@@ -1189,8 +1072,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer class="border-t border-casino-600/20 py-12 md:py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -1202,9 +1083,7 @@
                         <span class="text-white font-bold text-lg">Casinos<span class="text-gold-400">.autos</span></span>
                     </div>
                     <p class="text-gray-500 text-sm leading-relaxed">Рейтинг лучших онлайн казино России 2026. Честные обзоры, актуальные бонусы и лицензированные платформы.</p>
-===
                 </div>
-
                 <div>
                     <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Навигация</h4>
                     <ul class="space-y-2">
@@ -1214,7 +1093,6 @@
                         <li><a href="#bonuses" class="text-gray-500 hover:text-gold-400 text-sm transition-colors">Бонусы</a></li>
                     </ul>
                 </div>
-
                 <div>
                     <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Информация</h4>
                     <ul class="space-y-2">
@@ -1224,7 +1102,6 @@
                         <li><a href="#" class="text-gray-500 hover:text-gold-400 text-sm transition-colors">Контакты</a></li>
                     </ul>
                 </div>
-
                 <div>
                     <h4 class="text-white font-bold mb-4 text-sm uppercase tracking-wider">Возраст 18+</h4>
                     <p class="text-gray-500 text-sm leading-relaxed mb-4">Сайт предназначен для лиц старше 18 лет. Азартные игры могут вызывать зависимость. Играйте ответственно.</p>
@@ -1235,12 +1112,9 @@
                     </div>
                 </div>
             </div>
-
             <div class="section-divider mb-6"></div>
-
             <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p class="text-gray-600 text-xs">© 2026 Casinos.autos — Рейтинг онлайн казино России. Все права защищены.</p>
-===
                 <div class="flex gap-4 text-xs text-gray-600">
                     <a href="#" class="hover:text-gold-400 transition-colors">Политика конфиденциальности</a>
                     <a href="#" class="hover:text-gold-400 transition-colors">Условия использования</a>
@@ -1248,51 +1122,36 @@
             </div>
         </div>
     </footer>
-
-    <!-- Back to Top Button -->
     <button id="backToTop" class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-gold-500/80 hover:bg-gold-400 text-casino-950 rounded-xl flex items-center justify-center shadow-lg shadow-gold-500/20 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none">
         <i data-lucide="arrow-up" class="w-5 h-5"></i>
     </button>
-
     <script src="lucide.min.js"></script>
     <script>
-        // Initialize Lucide icons
         lucide.createIcons();
-
-        // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         let menuOpen = false;
-
         mobileMenuBtn.addEventListener('click', () => {
             menuOpen = !menuOpen;
             mobileMenu.classList.toggle('hidden', !menuOpen);
         });
-
-        // Close mobile menu on link click
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 menuOpen = false;
                 mobileMenu.classList.add('hidden');
             });
         });
-
-        // Filter Tabs
         const filterBtns = document.querySelectorAll('.filter-btn');
         const casinoCards = document.querySelectorAll('.casino-card');
-
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Update active state
                 filterBtns.forEach(b => {
                     b.classList.remove('active', 'bg-gold-500/20', 'border-gold-500/30', 'text-gold-300');
                     b.classList.add('bg-casino-700/50', 'border-casino-600/30', 'text-gray-400');
                 });
                 btn.classList.add('active', 'bg-gold-500/20', 'border-gold-500/30', 'text-gold-300');
                 btn.classList.remove('bg-casino-700/50', 'border-casino-600/30', 'text-gray-400');
-
                 const filter = btn.dataset.filter;
-
                 casinoCards.forEach(card => {
                     const categories = card.dataset.category || '';
                     if (filter === 'all' || categories.includes(filter)) {
@@ -1312,17 +1171,12 @@
                 });
             });
         });
-
-        // Accordion
         document.querySelectorAll('.accordion-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const targetId = btn.dataset.target;
                 const content = document.getElementById(targetId);
                 const icon = btn.querySelector('.accordion-icon');
-
                 const isOpen = content.classList.contains('open');
-
-                // Close all accordions in the same parent container
                 const parent = btn.closest('section') || btn.closest('div');
                 parent.querySelectorAll('.accordion-content.open').forEach(c => {
                     c.classList.remove('open');
@@ -1337,10 +1191,7 @@
                 }
             });
         });
-
-        // Back to Top Button
         const backToTop = document.getElementById('backToTop');
-
         window.addEventListener('scroll', () => {
             if (window.scrollY > 500) {
                 backToTop.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
@@ -1350,12 +1201,9 @@
                 backToTop.classList.remove('opacity-100', 'translate-y-0');
             }
         });
-
         backToTop.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
-        // Navbar shadow on scroll
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 10) {
@@ -1364,13 +1212,10 @@
                 navbar.classList.remove('shadow-lg', 'shadow-black/20');
             }
         });
-
-        // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1380,12 +1225,9 @@
                 }
             });
         }, observerOptions);
-
-        // Observe all feature cards and sections
         document.querySelectorAll('.feature-card, .casino-card').forEach((el, i) => {
             el.style.transitionDelay = `${i * 0.05}s`;
         });
     </script>
-<script src="https://deepsite.hf.co/deepsite-badge.js"></script>
 </body>
 </html>
