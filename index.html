@@ -732,7 +732,7 @@
                                     <div class="rank-number text-3xl sm:text-4xl font-black font-display">#${c.rank}</div>
                                 </div>
                                 <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br from-white/10 to-white/5 flex items-center justify-center overflow-hidden border border-white/10 shrink-0">
-                                    <img src="http://static.photos/${c.rank % 2 === 0 ? 'red' : 'nature'}/200x200/${c.imgSeed}" alt="${c.name}" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\\'text-lg font-bold text-gold-400\\'>${c.name.charAt(0)}</span>'">
+                                    <img src="/img${c.rank % 2 === 0 ? 'red' : 'nature'}/200x200/${c.imgSeed}" alt="${c.name}" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\\'text-lg font-bold text-gold-400\\'>${c.name.charAt(0)}</span>'">
                                 </div>
                                 <div class="min-w-0">
                                     <div class="flex items-center gap-2 flex-wrap">
